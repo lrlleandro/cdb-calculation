@@ -58,3 +58,4 @@ Thumbs.db
 /tests/Application.UnitTests/bin/Debug/net7.0
 /tests/Application.UnitTests/obj
 /src/UI/obj/Debug
+/src/Infrastructure/obj/Release/net7.0
