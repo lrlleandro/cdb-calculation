@@ -1,0 +1,2 @@
+D:\GIT\cdb-calculation\src\WebUI\UI\obj\Debug\UI.esproj.SuggestedBindingRedirects.cache
+D:\GIT\cdb-calculation\src\WebUI\UI\obj\Debug\UI.esproj.CoreCompileInputs.cache

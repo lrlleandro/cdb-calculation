@@ -1,51 +1,50 @@
-
-<div class=" content">
-  <div class=" row">
-    <div class=" col-md-10">
-      <div class=" card">
-        <div class=" card-header"><h5 class=" title">Simulador de Rendimento CDB</h5></div>
-        <form #simulatorForm="ngForm" (ngSubmit)="simulatePerformance(simulatorForm)">
-          <div class=" card-body">
-            <div class=" row">
-              <div class=" col-md-6 px-md-1">
-                <div class=" form-group">
-                  <label> Valor inicial </label>
-                  <input [(ngModel)]="simulatorData.initialValue"
-                         name="initialValue"
-                         class=" form-control"
-                         type="number"
-                         min="1"
-                         placeholder="Valo inicial" />
-                </div>
-              </div>
-              <div class=" col-md-4 pr-md-1">
-                <div class=" form-group">
-                  <label> Prazo </label>
-                  <input [(ngModel)]="simulatorData.termInMonths"
-                         name="termInMonths"
-                         class=" form-control"
-                         type="number"
-                         min="1"
-                         placeholder="Prazo em meses" />
-                </div>
+<div class="container">
+  <br />
+  <div class="card text-center">
+    <div class="card-body">
+      <h3 class="card-title">Simulador de Rendimento CDB</h3>
+      <form #simulatorForm="ngForm" (ngSubmit)="simulatePerformance(simulatorForm)">
+        <div class="card-body">
+          <div class=" row">
+            <div class=" col-md-6 px-md-1">
+              <div class=" form-group col-md-10">
+                <label> Valor inicial </label>
+                <input [(ngModel)]="simulatorData.initialValue"
+                       name="initialValue"
+                       class=" form-control"
+                       type="number"
+                       min="1"
+                       placeholder="Valo inicial" />
               </div>
             </div>
-            <div class=" row">
-              <div class=" col-md-6 px-md-1">
-                <div class=" form-group">
-                  Rendimento Bruto: R${{ simulatorResultsData.value | number:'1.2-2' }}
-                </div>
-                <div class=" form-group">
-                  Rendimento Líquido (com impostos): R${{ simulatorResultsData.valueWithTax | number:'1.2-2' }}
-                </div>
+            <div class=" col-md-6 pr-md-1">
+              <div class=" form-group col-md-10">
+                <label> Prazo em meses</label>
+                <input [(ngModel)]="simulatorData.termInMonths"
+                       name="termInMonths"
+                       class=" form-control"
+                       type="number"
+                       min="1"
+                       placeholder="Prazo em meses" />
               </div>
             </div>
           </div>
-          <div class=" card-footer">
-            <button class=" btn btn-fill btn-danger" type="submit">Simular</button>
-          </div>
-        </form>
+        </div>
+        <div class=" card-footer">
+          <button class=" btn btn-fill btn-danger" type="submit">Simular</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <br />
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title text-center">Resultados</h4>
+      <div class="row">
+        <p>Rendimento Bruto: R${{ simulatorResultsData.value | number:'1.2-2' }}</p>
+        <p>Rendimento Líquido (com impostos): R${{ simulatorResultsData.valueWithTax | number:'1.2-2' }}</p>
       </div>
     </div>
   </div>
 </div>
+

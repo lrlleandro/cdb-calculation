@@ -1,5 +1,4 @@
-﻿using Application.Common.Exceptions;
-using Application.Common.Interfaces;
+﻿using Application.Common.Interfaces;
 using Domain.Entities;
 using FluentValidation;
 using MediatR;
@@ -7,7 +6,7 @@ using ValidationException = Application.Common.Exceptions.ValidationException;
 
 namespace Application.Features.SimulatePerformance
 {
-    public record SimulatePerformanceCommand: IRequest<PerformanceResults>
+    public record SimulatePerformanceCommand : IRequest<PerformanceResults>
     {
         public int InitialValue { get; init; }
         public int TermInMonths { get; init; }

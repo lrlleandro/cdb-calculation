@@ -2,10 +2,12 @@
 using Domain.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
 namespace Infrastructure.Persistence
 {
+    [ExcludeFromCodeCoverage]
     public class ApplicationDbContext : DbContext, IApplicationDbContext
     {
         private readonly IMediator _mediator;

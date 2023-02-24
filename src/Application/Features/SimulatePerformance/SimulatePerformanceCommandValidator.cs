@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using System.Runtime.ConstrainedExecution;
 
 namespace Application.Features.SimulatePerformance
 {

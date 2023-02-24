@@ -1,7 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Domain.Entities
 {
+    [ExcludeFromCodeCoverage]
     public class TaxRate
     {
         [Key]

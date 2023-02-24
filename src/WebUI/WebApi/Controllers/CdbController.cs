@@ -1,11 +1,12 @@
 ﻿using Application.Features.SimulatePerformance;
 using Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics.CodeAnalysis;
 using WebApi.Controllers;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace CdbCalculation.Controllers
 {
+    [ExcludeFromCodeCoverage]
     public class CdbController : ApiControllerBase
     {
         
