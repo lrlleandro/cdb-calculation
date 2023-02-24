@@ -54,3 +54,7 @@ Thumbs.db
 /src/WebUI/UI/obj/Debug
 /src/WebUI/WebApi/bin/Debug/net7.0
 /src/WebUI/WebApi/obj
+/tests/Application.UnitTests/bin/Debug/net7.0/fine-code-coverage
+/tests/Application.UnitTests/bin/Debug/net7.0
+/tests/Application.UnitTests/obj
+/src/UI/obj/Debug
